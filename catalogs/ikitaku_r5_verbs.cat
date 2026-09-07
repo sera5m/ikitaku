@@ -1,0 +1,11 @@
+# verb|form|locked|r6|note
+info|a value/structure exists|1|0|struct var const
+map|one to one shape kept|1|0|R4 map-math or map-table
+order|rearrange by key|1|0|sort is R3
+repeat|apply along an axis|1|0|axis is R4
+decision|compare then take a control path|1|0|not a table
+invert|undo a known transform|1|0|peel T^-1
+compare|produce a relation across values|1|0|not a path choice
+theorize|claim about an event then score|1|1|R6 thought-model
+occam|prefer shallower wrap unless thrown|1|1|R6 strategy
+hegelian|determinate negation of a claim|1|1|R6 strategy
