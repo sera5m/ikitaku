@@ -56,11 +56,25 @@ sudo apt install -y libgtk-4-dev
 # then follow vulcan-ide README
 ```
 
-The phosphor **graph UI** under `ui/` is read-only source (TanStack/React). It is not a second `npm` app in this repo. A second person can read the theory, run `iki_trace`, and watch traces. Full analyze still wants `rsvm_t` from vulcan-lang (`IKITAKU_STANDALONE` is the thin host).
+## Graph UI — local window (Firefox in disguise)
 
-## Graph UI (this tree)
+The phosphor viewer under `ui/` is now a Vite app. The launcher starts Vite on `127.0.0.1:5173` and opens it as a **site-specific browser** (`firefox --ssb`). That is still Firefox, without the tab strip. Chromium `--app=` is the fallback.
 
-Read-only phosphor viewer. Source in `ui/`.
+```bash
+sudo apt install -y nodejs npm firefox
+cd ~/ikitaku/ui
+npm install          # first time only
+npm run window       # server + app window
+```
+
+If the window does not pop, open [http://127.0.0.1:5173](http://127.0.0.1:5173) yourself. Log: `/tmp/ikitaku-ui.log`. Stop the server: `kill $(cat /tmp/ikitaku-ui.pid)`.
+
+Optional menu entry (from the `ui/` folder):
+
+```bash
+cp ikitaku-ui.desktop ~/.local/share/applications/
+# edit the desktop file so Exec= points at this ui/ directory
+```
 
 - **thought graph** — bags, ranks, association
 - **neurons** — matrix of dots. R5+ always lit as cells; R4 only when fired; R3–R0 appear when you select an R4.
