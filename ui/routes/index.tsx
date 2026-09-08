@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CrtOverlay } from "@/components/iki/CrtOverlay";
 import { GraphCanvas } from "@/components/iki/GraphCanvas";
@@ -16,9 +15,7 @@ import {
 import { STIMULI, thinkSource } from "@/lib/iki/think";
 import { RANKS } from "@/lib/iki/catalog";
 
-export const Route = createFileRoute("/")({ component: Home });
-
-function Home() {
+export function Home() {
   const [source, setSource] = useState("");
   const [tick, setTick] = useState(3);
   const [picked, setPicked] = useState<string | null>(null);
