@@ -5,6 +5,14 @@ import { GraphCanvas } from "@/components/iki/GraphCanvas";
 import { Meters } from "@/components/iki/Meters";
 import { NeuronsMatrix } from "@/components/iki/NeuronsMatrix";
 import { TopoGround } from "@/components/iki/TopoGround";
+import {
+  VIS_DEFAULT,
+  VisualParams,
+  loadVis,
+  saveVis,
+  visStyle,
+  type Vis,
+} from "@/components/iki/VisualParams";
 import { STIMULI, thinkSource } from "@/lib/iki/think";
 import { RANKS } from "@/lib/iki/catalog";
 
@@ -17,9 +25,18 @@ function Home() {
   const [fileName, setFileName] = useState<string | null>(null);
   const [chrome, setChrome] = useState(2);
   const [tab, setTab] = useState<"graph" | "neurons">("graph");
+  const [vis, setVis] = useState<Vis>(VIS_DEFAULT);
   const fileRef = useRef<HTMLInputElement>(null);
   const result = useMemo(() => thinkSource(source, tick), [source, tick]);
   const node = result.nodes.find((n) => n.id === picked);
+
+  useEffect(() => {
+    setVis(loadVis());
+  }, []);
+
+  useEffect(() => {
+    saveVis(vis);
+  }, [vis]);
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -52,7 +69,7 @@ function Home() {
   const showSides = chrome >= 2;
 
   return (
-    <div className="relative min-h-dvh cursor-cross text-fg">
+    <div className="relative min-h-dvh overflow-x-hidden cursor-cross text-fg" style={visStyle(vis)}>
       <TopoGround />
       <CrtOverlay />
       <div className="relative z-10">
@@ -92,7 +109,7 @@ function Home() {
         ) : null}
 
         <div
-          className={`grid gap-0 ${showSides ? "lg:grid-cols-[16rem_1fr_18rem]" : ""}`}
+          className={`grid min-w-0 gap-0 ${showSides ? "lg:grid-cols-[16rem_1fr_18rem]" : ""}`}
         >
           {showSides ? (
             <aside className="lcd-panel border-b border-border px-3 py-2 lg:border-r lg:border-b-0">
@@ -165,7 +182,7 @@ function Home() {
           ) : null}
 
           <section
-            className={`min-h-[22rem] border-b border-border lg:border-b-0 ${
+            className={`min-h-[22rem] min-w-0 overflow-hidden border-b border-border lg:border-b-0 ${
               tab === "neurons" ? "bg-black" : "lcd-panel"
             }`}
           >
@@ -251,6 +268,8 @@ function Home() {
             </ol>
           </section>
         ) : null}
+
+        {showChrome ? <VisualParams vis={vis} onChange={setVis} /> : null}
 
         <div className="fixed bottom-3 right-3 z-40 flex gap-1">
           <button
