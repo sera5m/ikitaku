@@ -41,6 +41,11 @@ Standalone (`IKITAKU_STANDALONE`) compiles a trace host. Full `ikitaku_analyze` 
 
 ## Graph UI
 
-Read-only. Nodes are bags (rank + verb + conf). Edges are parent, assoc, cause, or the live think-trace. No weight sliders.
+Read-only phosphor viewer. Source in `ui/`.
 
-Engine C++ lives in `engine/` (copy from the split tree). Catalogs in `catalogs/`.
+- **thought graph** — bags, ranks, association
+- **neurons** — matrix of dots. R5+ always lit as cells; R4 only when fired; R3–R0 appear when you select an R4. Connections follow parent/strategy/family. Field is black. Idle phosphor `#883400`.
+
+Cells are not editable. Stimulus is a pattern bag or a file.
+
+Engine C++ lives in `engine/`. Catalogs in `catalogs/`.
