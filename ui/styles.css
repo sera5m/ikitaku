@@ -45,6 +45,10 @@
 }
 
 :root {
+  --glow-text: 0.38;
+  --glow-screen: 0.42;
+  --scan-op: 0.52;
+  --vig-op: 0.78;
   --cursor-cross: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpolygon points='12,0 15,9 9,9' fill='%23ffcc66'/%3E%3Cpolygon points='12,24 15,15 9,15' fill='%23ffcc66'/%3E%3Cpolygon points='0,12 9,9 9,15' fill='%23ffcc66'/%3E%3Cpolygon points='24,12 15,9 15,15' fill='%23ffcc66'/%3E%3C/svg%3E")
     12 12;
 }
@@ -53,31 +57,30 @@
   cursor: var(--cursor-cross), crosshair;
 }
 
+/* Default is a thin VFD halo — far bloom is a slider, not baked in. */
 .lcd-glow {
   text-shadow:
-    0 0 2px #fff3c0,
-    0 0 6px #ffcc66,
-    0 0 14px #ffb000,
-    0 0 28px #ff880088,
-    0 0 48px #ff660044;
+    0 0 calc(1px + 2px * var(--glow-text)) #fff6c8cc,
+    0 0 calc(4px * var(--glow-text)) #ffcc6688,
+    0 0 calc(12px * var(--glow-text)) #ffb00055;
 }
 
 .lcd-panel {
   background: #0a0700f2;
   box-shadow:
     inset 0 0 0 1px #ffb00055,
-    0 0 24px #ffb00022;
+    0 0 calc(10px * var(--glow-screen)) #ffb00022;
 }
 
 .lcd-bar {
   box-shadow:
-    0 0 4px #ffe066,
-    0 0 10px #ffb000,
-    0 0 18px #ff8800aa;
+    0 0 calc(3px * var(--glow-text)) #ffe066,
+    0 0 calc(8px * var(--glow-screen)) #ffb000aa;
 }
 
 .crt-scan {
   pointer-events: none;
+  opacity: var(--scan-op);
   background: repeating-linear-gradient(
     0deg,
     transparent 0px,
@@ -88,12 +91,14 @@
 
 .crt-vignette {
   pointer-events: none;
+  opacity: var(--vig-op);
   background: radial-gradient(ellipse at center, transparent 48%, #000000ee 100%);
 }
 
 .crt-bloom {
   pointer-events: none;
-  background: radial-gradient(ellipse at 50% 30%, #ffb00014, transparent 55%);
+  opacity: var(--glow-screen);
+  background: radial-gradient(ellipse at 50% 30%, #ffb00022, transparent 55%);
 }
 
 .dot-idle {
@@ -124,7 +129,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .lcd-glow {
-    text-shadow: 0 0 8px #ffb000aa;
+    text-shadow: 0 0 4px #ffb00088;
   }
   .phos-flicker {
     animation: none;
