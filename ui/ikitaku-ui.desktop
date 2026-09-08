@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Ikitaku
+Comment=Read-only thought graph
+Exec=bash -lc "cd %k && bash scripts/iki-window.sh"
+Terminal=false
+Categories=Development;
+StartupWMClass=Ikitaku
