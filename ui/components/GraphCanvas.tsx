@@ -62,10 +62,9 @@ export function GraphCanvas({
         <pattern id="lcd-dots" width="8" height="8" patternUnits="userSpaceOnUse">
           <circle cx="1" cy="1" r="0.6" fill="#ffb000" opacity="0.22" />
         </pattern>
-        <filter id="phos-graph" x="-80%" y="-80%" width="260%" height="260%">
-          <feGaussianBlur stdDeviation="2.4" result="b" />
+        <filter id="phos-graph" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur stdDeviation="1.1" result="b" />
           <feMerge>
-            <feMergeNode in="b" />
             <feMergeNode in="b" />
             <feMergeNode in="SourceGraphic" />
           </feMerge>
@@ -139,7 +138,7 @@ export function GraphCanvas({
               fill="#ffcc66"
               fontSize={10}
               fontFamily="var(--font-mono)"
-              style={{ filter: "url(#phos-graph)" }}
+              className="lcd-glow"
             >
               {n.label}
             </text>
