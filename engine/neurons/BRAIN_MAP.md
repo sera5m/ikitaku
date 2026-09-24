@@ -1,5 +1,7 @@
 # Half an organ
 
+Correction (2026-09-23): the prefrontal row below is the old map, not the plan. Iki is the frontoparietal task mode. Memory is a position table, not a link map. Audit: [engine/MODE_AND_MEMORY.md](../MODE_AND_MEMORY.md).
+
 We built a prefrontal stack and called it a mind.
 
 That is not a failure of the ladder. It is a map error. Iki is **one
