@@ -5,7 +5,7 @@ Layered reasoner. **Not** the Vulcan VM. **Not** the watch OS.
 Ikitaku reads structured bags (Vulcan bytecode *or* a numeric series *or* a world delta) and writes hypotheses, association edges, and a thought trace.
 You watch. You do not poke the cells.
 
-**Theory (2026-09):** we built **half an organ**. Iki is the prefrontal stack (plan / WM / why / gate). The other cortices were missing, which is why it could reason and still stall. Map and typed-cell header: [engine/neurons/BRAIN_MAP.md](engine/neurons/BRAIN_MAP.md).
+**Theory (2026-09-23):** half an organ was the wrong cut in two ways. Iki is the frontoparietal **task mode**, not a prefrontal stack you keep bolting jobs onto. And `g_affinity` remembers row numbers, not edges. Audit: [engine/MODE_AND_MEMORY.md](engine/MODE_AND_MEMORY.md). Older map: [engine/neurons/BRAIN_MAP.md](engine/neurons/BRAIN_MAP.md).
 
 ## Depends on
 
