@@ -64,7 +64,7 @@ Does not keep:
 - the association fabric
 - valence
 - the action brake
-- timed loops (cerebellum / Vulcan)
+- timed loops (cerebellum / Toplethos)
 
 ## Memory failure
 
@@ -137,7 +137,7 @@ adds more readers of the same table. Task-mode split is the second cut.
 | Association fabric | completion along edges | cosine on link sets | hand 32-d basis as identity |
 | Valence | tag on node and edge; multiplies completion | header `valence`, values catalog | an emotion neuron species |
 | Selector | tonic brake, release one act, surround-suppress | R7 as inhibit-all | argmax inside the task list |
-| Timing | eligibility, lead/lag, wait axis | Vulcan trap loops | fold into R6 |
+| Timing | eligibility, lead/lag, wait axis | Toplethos trap loops | fold into R6 |
 | World bus | typed features in, typed acts out | env bags | teach task mode to be the eye |
 | Modulators | write-enable and "plastic now" | budget + novelty as gates on the edge write | more ungated Hebb |
 

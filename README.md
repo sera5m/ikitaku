@@ -1,20 +1,20 @@
 # ikitaku
 
-Layered reasoner. **Not** the Vulcan VM. **Not** the watch OS.
+Layered reasoner. **Not** the Toplethos VM. **Not** the watch OS.
 
-Ikitaku reads structured bags (Vulcan bytecode *or* a numeric series *or* a world delta) and writes hypotheses, association edges, and a thought trace.
+Ikitaku reads structured bags (Toplethos bytecode *or* a numeric series *or* a world delta) and writes hypotheses, association edges, and a thought trace.
 You watch. You do not poke the cells.
 
 **Theory (2026-09-23):** half an organ was the wrong cut in two ways. Iki is the frontoparietal **task mode**, not a prefrontal stack you keep bolting jobs onto. And `g_affinity` remembers row numbers, not edges. Audit: [engine/MODE_AND_MEMORY.md](engine/MODE_AND_MEMORY.md). Older map: [engine/neurons/BRAIN_MAP.md](engine/neurons/BRAIN_MAP.md).
 
 ## Depends on
 
-- [sera5m/vulcan-lang](https://github.com/sera5m/vulcan-lang) — language + desktop VM (`cpp_vm`). Clone as a **sibling**:
+- [sera5m/toplethos-lang](https://github.com/sera5m/toplethos-lang) — language + desktop VM (`cpp_vm`). Clone as a **sibling**:
 
-      vulcan-lang/
+      toplethos-lang/
       ikitaku/
 
-- [sera5m/vulcan-ide](https://github.com/sera5m/vulcan-ide) — optional GTK IDE (Wayland or X11). Iki does not edit neurons from the IDE; the IDE can dump bytecode for `ikitaku_analyze`.
+- [sera5m/toplethos-ide](https://github.com/sera5m/toplethos-ide) — optional GTK IDE (Wayland or X11). Iki does not edit neurons from the IDE; the IDE can dump bytecode for `ikitaku_analyze`.
 
 Watch firmware / ESP host is **out of this repo**.
 
@@ -41,10 +41,10 @@ Yes. Mint is Debian/Ubuntu userspace. g++ and cmake are enough for the trace hos
 sudo apt update
 sudo apt install -y build-essential cmake git
 
-git clone https://github.com/sera5m/vulcan-lang.git
+git clone https://github.com/sera5m/toplethos-lang.git
 git clone https://github.com/sera5m/ikitaku.git
 cd ikitaku
-cmake -S . -B build -DVULCAN_LANG_DIR=../vulcan-lang
+cmake -S . -B build -DTOPLETHOS_LANG_DIR=../toplethos-lang
 cmake --build build
 ./build/iki_trace --stimulus vanish
 ```
@@ -53,7 +53,7 @@ Optional IDE (GTK; Cinnamon/X11 or Wayland both fine):
 
 ```bash
 sudo apt install -y libgtk-4-dev
-# then follow vulcan-ide README
+# then follow toplethos-ide README
 ```
 
 ## Graph UI — local window (Firefox in disguise)

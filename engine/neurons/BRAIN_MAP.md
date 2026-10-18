@@ -40,7 +40,7 @@ R3 genus/attrs   R2 micro schema       R1 region       R0 surface
 | Basal ganglia | pick an action, inhibit the rest | R7 gate + hunt poles | real-ish |
 | **Prefrontal** | plans, WM, why | **R6–R9 + hypo stack + budget** | **this is iki** |
 | Amygdala / valence | cheap value on a percept | `valence` on `iki_cell_hdr_t` | table, not a species |
-| Cerebellum | timed precise loops | wait / trap / VM | Vulcan, not iki |
+| Cerebellum | timed precise loops | wait / trap / VM | Toplethos, not iki |
 | Brainstem | keep the lights on | idle / boredom tick | thin |
 | Motor / speech | act in the world | emit / env / watch_run | delegated bags |
 
@@ -48,7 +48,7 @@ Sections work together by **buses**, not by becoming one cell type.
 Sensory writes a bag. Association scores it. PFC keeps a hypo stack and a
 budget. Basal-ganglia-ish gate picks. Hippocampus stores a compressed
 trace. Valence tags the bag so later associate is biased. Motor is
-someone else's job (Vulcan / env).
+someone else's job (Toplethos / env).
 
 That split is already the files: `core` / `assoc` / `cluster` /
 `concept` / `mcog` / `life`. Those *are* the organelles. `neurons/`
