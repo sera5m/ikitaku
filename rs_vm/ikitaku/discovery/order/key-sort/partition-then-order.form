@@ -1,0 +1,7 @@
+r5=order
+r4=key-sort
+form=partition-then-order
+alias=qsort
+evidence=array + split + join + repeat(decision) + monotone bag
+conf=72
+locked=0

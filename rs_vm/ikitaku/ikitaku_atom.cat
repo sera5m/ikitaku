@@ -1,0 +1,17 @@
+# Flat L4 atom sheet. Not a hierarchy. Fill more later.
+# attr|role|note
+quanta|unit|base unit of physical matter (structured data)
+mass|energy-to-move|macro motion or binding force scale
+charge|field|codeterminant of attract
+polarity|orientation|codeterminant of bind
+reactivity|rate|how fast merge/split
+excitability|threshold|melting/boiling unknown-property sit
+melting_point|threshold|phase solid→liquid, unknown d
+boiling_point|threshold|phase liquid→gas
+binding|attract|codeterminant mass+charge+excitability
+phase|structure|gas|liquid|solid = volume-freedom
+volume_freedom|motion|high gas, mid liquid, low solid
+temperature|energy|subset of entropy + unknown
+entropy|disorder|noise/energy spread
+energy|capacity|related to mass and temperature
+attract|merge-attach|leads to antiderivative (molecule, not new R5)

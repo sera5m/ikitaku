@@ -1,0 +1,1 @@
+tan parent=sin covar=divisor-cos

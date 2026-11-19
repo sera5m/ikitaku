@@ -1,0 +1,24 @@
+# word|subject|r5|r4|conf
+atom|atom|info|atom|80
+gas|gas|info|atom|70
+liquid|liquid|info|atom|70
+solid|solid|info|atom|70
+water|water|info|atom|70
+matter|physical-matter|info|atom|60
+blueprint|blueprint|info|blueprint|70
+ship|blueprint|info|blueprint|50
+kitty|orange-cat|info|atom|60
+add|unity_mag|join|magnitude-unify|90
+plus|unity_mag|join|magnitude-unify|85
+sub|disunity_mag|split|magnitude-split|90
+minus|disunity_mag|split|magnitude-split|85
+multiply|scale_mag|join|magnitude-scale|80
+mul|scale_mag|join|magnitude-scale|80
+even|even_pred|map|map-table|85
+times|mul_repeat_add|repeat|mul-repeat-add|88
+star|mul_repeat_add|repeat|mul-repeat-add|80
+repeated-add|mul_repeat_add|repeat|mul-repeat-add|90
+transcendental|know-condition|theorize|know-condition|80
+apperception|know-condition|theorize|know-condition|75
+condition-of-knowing|know-condition|theorize|know-condition|90
+got-stuck|patience-stuck|bound|know-condition|70

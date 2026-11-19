@@ -1,0 +1,148 @@
+# R4 families inherit from an R5 verb. locked=1 core, 0 = proposed
+# parent|family|form|locked|note
+info|scalar|one value|1|var const
+info|struct|named fields|1|record
+info|stream|sequence of values|1|series
+info|array|indexed bag of values|1|a[i] axis=index
+info|bag|unordered many|1|not indexed
+info|atom|base unit of physical matter|1|flat L4 attrs, not R5
+info|blueprint|function+shape+relation|1|Theseus other bottom
+
+name|bind-slot|attach id to slot|1|let x
+name|bind-field|attach id to field|1|p.x
+copy|mov|dst = src|1|MOV
+copy|dup|duplicate on stack|1|DUP
+map|map-math|y=f(x) closed form|1|poly trig
+map|map-table|y=table[x] period alphabet|1|not a branch
+map|map-pointwise|same f each element|1|array map
+reduce|fold|iterate an accumulator|1|sum max
+reduce|affine-reduce|closed counted inc|1|counted_inc
+generate|unfold|one to many lawful|1|iter
+generate|sample|lawless draw|1|rand noise
+filter|pred-keep|keep if predicate|1|not decision
+filter|denoise|drop residual|1|subset of filter
+split|partition|one bag two bags|1|by pred
+join|concat|end to end|1|
+join|zip|lockstep pair|1|
+order|compare-swap|adjacent swap by key|1|bubble family
+order|divide-conquer|split merge|1|merge family
+order|key-sort|rearrange by named key|1|watch family
+seek|linear-scan|walk until witness|1|
+seek|best-slot|min waste / best fit|1|skyline
+seek|witness-minmax|slot holds min or max|1|watch
+seek|template|short bag as witness inside a longer bag|1|partial want; ratio is c
+repeat|iterator-axis|advance i|1|
+repeat|time-axis|advance t|1|wait loop
+repeat|counted|fixed n|1|do n
+sequence|then|T then U|1|compose
+sequence|pipeline|out of T into U|1|chain
+decision|binary-cmp|two-way path|1|if
+decision|switch-table|many-way path|1|switch
+wait|delay-block|sleep then resume|1|
+wait|poll|spin until event|1|
+invert|peel|undo outer wrap|1|
+invert|undo-op|algebraic inverse|1|
+bound|clamp|force into range|1|
+bound|satisfy|meet a predicate|1|
+bound|type|meet a ty|1|
+emit|print|text/num out|1|
+emit|host-out|host callback|1|
+absorb|sensor|gpio adc|1|
+absorb|host-in|host read|1|
+destroy|free|release storage|1|
+compare|lt-sign|order two values|1|< > 
+compare|eq|sameness|1|==
+compare|key-order|compare by key|1|sort key
+compare|post-hoc|after is not because|1|B after A
+compare|cum-hoc|together is not because|1|same span
+compare|common-cause|hidden D drives A and B|1|third factor
+compare|directed-chain|order-asymmetric cause|1|commutator nonzero
+decision|compare-branch|R4 default for if|1|axis compare
+info|atom|quanta of structured data, attract/merge|0|proposed R4
+info|blueprint|function+shape+relation|0|proposed R4
+info|creature|living bag, absorb/emit/repeat|0|proposed R4
+split|join_x_split|created leftover genus|0|proposed R4
+repeat|repeat_x_wait|created leftover genus|0|proposed R4
+filter|filter_x_invert|created leftover genus|0|proposed R4
+invert|invert_x_repeat|created leftover genus|0|proposed R4
+filter|filter_x_unknown|created leftover genus|0|proposed R4
+theorize|hegelian_x_scientific_x_theoriz|created leftover genus|0|proposed R4
+invert|invert_x_order|created leftover genus|0|proposed R4
+join|magnitude-unify|add two magnitudes|1|add; mathematical unity
+split|magnitude-split|subtract magnitudes|1|sub; mathematical disunity
+map|plus-n|x maps to x+n|1|+n constant shift
+map|minus-n|x maps to x-n|1|-n inverse of plus-n
+join|magnitude-scale|product of magnitudes|1|mul; step tracks other input
+invert|invert_x_seek|created leftover genus|0|proposed R4
+seek|decision_x_seek|created leftover genus|0|proposed R4
+invert|compare_x_invert|created leftover genus|0|proposed R4
+emit|nested-quote|emit of another bag emit|1|speech about speech
+compare|xor-lock|cannot isolate one charge from xor|1|A oplus P
+invert|charge-disunity|charge -1|1|lie map
+copy|charge-unity|charge +1|1|truth map
+decision|boolean-tt|16 boolean ops on charge pm1|1|AND OR XOR XNOR NAND NOR IMP TRUE FALSE
+decision|goal-conflict|two useful goals pareto clash|1|R7 not singular
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+repeat|while-axis|condition then body then retest|1|control while loop
+repeat|thought-loop|re-evaluate methods without residual drop|1|metacog circular thinking
+repeat|cycle|return to same state class along axis|1|platonic parent of while and thought-loop
+theorize|circular-eval|same fingerprint no progress|1|evaluating in a circle
+repeat|thought-loop|re-evaluate methods without residual drop|0|proposed R4
+theorize|circular-eval|same fingerprint no progress|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+seek|map_x_seek|created leftover genus|0|proposed R4
+order|map_x_order|created leftover genus|0|proposed R4
+order|map_x_order|created leftover genus|0|proposed R4
+invert|generate_x_invert|created leftover genus|0|proposed R4
+invert|generate_x_invert|created leftover genus|0|proposed R4
+generate|generate_x_map|created leftover genus|0|proposed R4
+generate|generate_x_map|created leftover genus|0|proposed R4
+order|map_x_order|created leftover genus|0|proposed R4
+order|map_x_order|created leftover genus|0|proposed R4
+filter|filter_x_map|created leftover genus|0|proposed R4
+filter|filter_x_map|created leftover genus|0|proposed R4
+order|map_x_order|created leftover genus|0|proposed R4
+order|map_x_order|created leftover genus|0|proposed R4
+order|map_x_order|created leftover genus|0|proposed R4
+order|map_x_order|created leftover genus|0|proposed R4
+filter|filter_x_map|created leftover genus|0|proposed R4
+filter|filter_x_map|created leftover genus|0|proposed R4
+map|mul-repeat-add|repeat addend count times; count is one factor only|0|mul = loop(n) unity(addend)
+reduce|accum-add|unity_mag along repeat axis|0|add folded
+repeat|count-axis|n is iterator not addend|0|mul's n
+theorize|know-condition|bound that makes any bag evaluable; not an object inside the bag|0|transcendental meaning
+bound|know-condition|evaluator is condition of compare/join not a member of the series|0|
+order|map_x_order|created leftover genus|0|proposed R4
+order|map_x_order|created leftover genus|0|proposed R4
+order|map_x_order|created leftover genus|0|proposed R4
+order|map_x_order|created leftover genus|0|proposed R4
+theorize|origin_x_bound_x_theorize|created leftover genus|0|proposed R4
+order|map_x_order|created leftover genus|0|proposed R4
+order|map_x_order|created leftover genus|0|proposed R4
+bound|know-condition|low patience declares stuck|0|proposed R4
+bound|know-condition|low patience declares stuck|0|proposed R4
+bound|know-condition|x|0|proposed R4
+bound|know-condition|low patience declares stuck|0|proposed R4
+bound|know-condition|low patience declares stuck|0|proposed R4

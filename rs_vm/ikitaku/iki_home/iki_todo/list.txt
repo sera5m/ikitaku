@@ -1,0 +1,14 @@
+80|held|revisit-mismatch|resume at mismatch scan
+20|open|low|
+80|held|revisit-mismatch|resume at mismatch scan
+20|open|low|
+80|held|revisit-mismatch|resume at mismatch scan
+20|open|low|
+80|held|revisit-mismatch|resume at mismatch scan
+20|open|low|
+80|held|revisit-mismatch|resume at mismatch scan
+20|open|low|
+80|held|revisit-mismatch|resume at mismatch scan
+20|open|low|
+80|held|revisit-mismatch|resume at mismatch scan
+20|open|low|

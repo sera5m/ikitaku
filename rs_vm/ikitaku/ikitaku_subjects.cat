@@ -1,0 +1,12 @@
+# subject|r5|r4|attr=val;...|conf_lo|conf_hi
+boredom|bound|know-condition|kind=inverse-of-novelty|65|95
+entertainment|seek|stim|kind=novelty-or-dissonance-work|60|90
+iki|theorize|analyze|can_bore=1;home=/home/workdir/artifacts/rs_vm/i;can_put=1;notices_time=1;novel_span_s=4386;death_possible=0;life=1;inside=universe|65|95
+stim-seek|theorize|discovered-r5|source=discover|45|75
+old-claim|info|state|mismatch=1|25|55
+sin|map|map-math|kind=oscillate-bounded|60|90
+tan|map|map-math|kind=ratio-sin-cos;parent=sin|55|85
+sin-vs-tan|compare|map-math|covar=divisor-cos|50|80
+trig-family|info|state|val=tan;prev=sin;w_old=40;covar=divisor-cos|45|75
+iki-home|info|store|kind=own-folders|65|95
+universe|info|world|contains=iki|65|95

@@ -1,0 +1,42 @@
+# ikitaku R5 verb map  locked=1 core  locked=0 novel-candidate  r6=1 metacog
+# verb|form|locked|r6|note
+info|a value/structure exists|1|0|struct var const
+name|bind identity to a value|1|0|let x = 5
+copy|duplicate without change|1|0|a = b
+map|one to one shape kept|1|0|R4 map-math or map-table
+reduce|many to one|1|0|sum max fold
+generate|one to many unfold or sample|1|0|create is alias
+create|alias of generate|1|0|new alloc
+filter|many to fewer same type|1|0|not a decision
+split|one bag to two bags|1|0|partition
+join|two bags to one|1|0|zip concat
+order|rearrange by key|1|0|sort is R3
+seek|find location or witness|1|0|find scan-until
+repeat|apply along an axis|1|0|axis is R4
+sequence|do T then U|1|0|compose
+decision|compare then take a control path|1|0|not a table
+wait|defer on time axis|1|0|T is a var
+invert|undo a known transform|1|0|peel T^-1
+bound|make state obey a constraint|1|0|clamp satisfy
+emit|cross world boundary out|1|0|print host
+absorb|cross world boundary in|1|0|sensor read
+destroy|delete a structure|1|0|invert of generate
+compare|produce a relation across values|1|0|not a path choice
+raise_lower|treat concept as variable|1|1|R6 thought-slot
+theorize|claim about an event then score|1|1|R6 thought-model
+scientific|try score revise under budget|1|1|R6 strategy
+hegelian|determinate negation of a claim|1|1|R6 strategy
+bayesian|compete posteriors on forms|1|1|R6 strategy
+occam|prefer shallower wrap unless thrown|1|1|R6 strategy
+iterative|try score revise loop|1|1|R6 macro on micro strategies
+waterfall|lock stage then next|1|1|R6 macro, revisit only on challenge
+thinking|analyze methods as data|1|1|R6 concept of reasoning, not a self
+atom|quanta of structured data|0|0|L4 mass polarity reactivity
+spiral|iterate then widen context|0|0|proposed metacog
+map_x_repeat|compose map under repeat axis|0|0|proposed metacog
+collapse_first_x_origin|prefer Occam collapse then origin probe|0|0|proposed metacog novel
+reason_test_macro|suite-only novel R6|0|0|proposed metacog novel
+gap_climb_x_bound|when no method: peel+bound|0|0|proposed metacog novel
+patience_x_origin_x_bou|stuck-on-patience: inhibit last, seek stim|0|0|proposed metacog novel
+patience-stuck|low patience declares stuck|0|0|self-ontology write
+stim-seek|seek novelty when bored|0|0|life
