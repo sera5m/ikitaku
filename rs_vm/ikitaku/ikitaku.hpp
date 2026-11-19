@@ -1,9 +1,11 @@
 #pragma once
 /* ikitaku public facade — segmented by concern.
    September engine. Feed it a current Toplethos program via
-   ikitaku_tp_fill / ikitaku_tp_fill_program (see PORT_TOPLETHOS.md). */
+   ikitaku_tp_fill / ikitaku_tp_fill_program (see PORT_TOPLETHOS.md).
+   Manual thoughts: ikitaku_thought_in (see host/iki_think.cpp). */
 #include "../vm/rs_vm_struct.hpp"
 #include "ikitaku_tp_bridge.hpp"
+#include "ikitaku_thought.hpp"
 
 #ifdef __cplusplus
 extern "C" {
